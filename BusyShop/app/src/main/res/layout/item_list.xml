@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvItem"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="120dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/items_inbetween_small">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    style="@style/cl_name_text_style"
+                    android:paddingVertical="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Item Name: " />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    style="@style/cl_number_text_style"
+
+                    android:paddingLeft="8dp"
+                    android:text="Price: " />
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    style="@style/cl_address_text_style"
+                    android:paddingLeft="8dp"
+                    android:text="Quantity: " />
+
+                <View style="@style/cl_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/small_text"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ivSubtract"
+                        style="@style/cl_cta_option"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_minus" />
+
+                    <ImageView
+                        android:id="@+id/ivAdd"
+                        style="@style/cl_cta_option"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_plus" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

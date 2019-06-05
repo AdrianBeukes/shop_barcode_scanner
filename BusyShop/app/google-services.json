@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1094480502840",
+    "firebase_url": "https://the-busy-shop.firebaseio.com",
+    "project_id": "the-busy-shop",
+    "storage_bucket": "the-busy-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094480502840:android:d78786cba5811378",
+        "android_client_info": {
+          "package_name": "com.ikhokha.techcheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094480502840-rqkp4mpjsicv6f5b6gepo2jdcds2n5ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH8lDCbVv8ktkdhHamOty-UCU9tzOt5RA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BusyShop</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">The Busy Shop</string>
+    <string name="nav_header_subtitle">TheBusyShop@CoolKids.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_about">About</string>
+    <string name="menu_guide">Guide On How To Use</string>
+    <string name="menu_contact">Contact Us</string>
+
+    <string name="about_description">The Busy Shop is all about giving solutions to speeding up your check-out orders, while giving an amazing user experience that is bound to turn heads and leave users with a smile!</string>
+    <string name="about_info">The Busy Shop:
+    \n &#8226;Version - v1.0.0
+    \n &#8226;Email - TheBusyShop@CoolKids.com
+    \n &#8226;contact - 031 5555 555</string>
+
+    <string name="title_activity_camera">Scanner</string>
+
+</resources>

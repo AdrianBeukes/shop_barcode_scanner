@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_nav_drawer"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/layout_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContactsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txtPrice"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imgArrow"
+            android:layout_centerInParent="true"
+            android:text="Tap Scanner icon below to get started!"
+            android:textColor="@android:color/black"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="125dp"
+            android:src="@drawable/bg_arrow_down"
+            android:layout_above="@+id/txtPrice"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_above="@+id/btnCheckout"
+            android:background="#999999"
+            android:paddingVertical="16dp"
+            android:paddingLeft="24dp"
+            android:text="Total"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCheckout"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCheckout"
+            android:layout_toRightOf="@+id/space"
+            android:background="#999999"
+            android:paddingVertical="16dp"
+            android:textAlignment="viewEnd"
+            android:paddingRight="24dp"
+            android:text="R 0.00"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_cart"
+            android:drawableTint="#000000"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingVertical="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="45dp"
+            android:text="Checkout"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#1089A1"
+            android:drawableBottom="@drawable/ic_scanner"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp"
+            android:text="Start Scanning"
+            android:textAlignment="viewStart" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
